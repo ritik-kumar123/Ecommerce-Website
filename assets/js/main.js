@@ -396,3 +396,7 @@ About.forEach(about=>{
      let abouttext = document.querySelector(about.selector);
     abouttext.addEventListener("click",()=>aboutbox(about.selector));
 })
+
+document.getElementById("explore-btn").addEventListener("click", function() {
+    document.getElementById("shops").scrollIntoView({ behavior: 'smooth' });
+});
